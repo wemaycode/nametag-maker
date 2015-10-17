@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang='en' xml:lang='en' xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Crimson+Text:400' rel='stylesheet' type='text/css'>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>        window.jQuery || document.write("<script src='js/jquery.min.1.7.2.js'>\x3C/script>")</script>	
+	<script src="jquery.cookie.js"></script>	
+</head>
+<link rel="stylesheet" href="style.css"  type="text/css" />
+<body>
+<div id="content">
+	<div class="image">
+		<div class="nametag one reg">
+			<div class="first">First1</div>
+			<div class="last">Last1</div>
+		</div>
+		<div class="nametag one flip">
+			<div class="first">First1</div>
+			<div class="last">Last1</div>
+		</div>
+		<div class="nametag two reg">
+			<div class="first">First2</div>
+			<div class="last">Last2</div>
+		</div>
+		<div class="nametag two flip">
+			<div class="first">First2</div>
+			<div class="last">Last2</div>
+		</div>
+		<div class="nametag three reg">
+			<div class="first">First3</div>
+			<div class="last">Last3</div>
+		</div>
+		<div class="nametag three flip">
+			<div class="first">First3</div>
+			<div class="last">Last3</div>
+		</div>
+		<div class="nametag four reg">
+			<div class="first">First4</div>
+			<div class="last">Last4</div>
+		</div>
+		<div class="nametag four flip">
+			<div class="first">First4</div>
+			<div class="last">Last4</div>
+		</div>
+	</div>
+</div>
+
+<script>
+$(document).ready(function(){
+	$(".nametag.one.reg .first").html($.cookie('first1'));
+	$(".nametag.one.reg .last").html($.cookie('last1'));
+	$(".nametag.two.reg .first").html($.cookie('first2'));
+	$(".nametag.two.reg .last").html($.cookie('last2'));	
+	$(".nametag.three.reg .first").html($.cookie('first3'));
+	$(".nametag.three.reg .last").html($.cookie('last3'));	
+	$(".nametag.four.reg .first").html($.cookie('first4'));
+	$(".nametag.four.reg .last").html($.cookie('last4'));	
+	
+	$(".nametag.one.flip .first").html($.cookie('first1'));
+	$(".nametag.one.flip .last").html($.cookie('last1'));
+	$(".nametag.two.flip .first").html($.cookie('first2'));
+	$(".nametag.two.flip .last").html($.cookie('last2'));	
+	$(".nametag.three.flip .first").html($.cookie('first3'));
+	$(".nametag.three.flip .last").html($.cookie('last3'));	
+	$(".nametag.four.flip .first").html($.cookie('first4'));
+	$(".nametag.four.flip .last").html($.cookie('last4'));	
+	
+	$.removeCookie('first1');
+	$.removeCookie('last1');
+	$.removeCookie('first2');
+	$.removeCookie('last2');
+	$.removeCookie('first3');
+	$.removeCookie('last3');
+	$.removeCookie('first4');
+	$.removeCookie('last4');
+	
+});
+</script>
+
+</body>
+</html>

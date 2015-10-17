@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang='en' xml:lang='en' xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Crimson+Text:400' rel='stylesheet' type='text/css'>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>        window.jQuery || document.write("<script src='js/jquery.min.1.7.2.js'>\x3C/script>")</script>		
+	<script src="jquery.cookie.js"></script>
+</head>
+<link rel="stylesheet" href="style.css"  type="text/css" />
+<body>
+	<h1>Highrock Nametag Maker</h1>
+<div id="content">
+<?php echo "test" ?>
+
+	<h3>Nametag #1</h3>
+	<div class="label">First Name</div>
+	<input type="text" name="First1" id="First1" size="52" value="">
+	<br/>
+	<div class="label">Last Name </div>
+	<input type="text" name="Last1" id="Last1" size="52" value="">
+	
+	<h3>Nametag #2</h3>
+	<div class="label">First Name</div>
+	<input type="text" name="First2" id="First2" size="52" value="">
+	<br/>
+	<div class="label">Last Name </div>
+	<input type="text" name="Last2" id="Last2" size="52" value="">
+	
+	<h3>Nametag #3</h3>
+	<div class="label">First Name</div>
+	<input type="text" name="First3" id="First3" size="52" value="">
+	<br/>
+	<div class="label">Last Name </div>
+	<input type="text" name="Last3" id="Last3" size="52" value="">
+	
+	<h3>Nametag #4</h3>
+	<div class="label">First Name</div>
+	<input type="text" name="First4" id="First4" size="52" value="">
+	<br/>
+	<div class="label">Last Name </div>
+	<input type="text" name="Last4" id="Last4" size="52" value="">
+	<br/><br/>
+	<input type="button" title="" value="Submit" name="submit" id="submit">
+	
+</div>
+
+<script>
+$(document).ready(function(){		
+		
+	$("#submit").click(function(){	
+		
+		$.cookie('first1', First1.value, { path: '/'} );
+		$.cookie('last1', Last1.value, { path: '/'} );
+		$.cookie('first2', First2.value, { path: '/'} );
+		$.cookie('last2', Last2.value, { path: '/'} );
+		$.cookie('first3', First3.value, { path: '/'} );
+		$.cookie('last3', Last3.value, { path: '/'} );
+		$.cookie('first4', First4.value, { path: '/'} );
+		$.cookie('last4', Last4.value, { path: '/'} );
+		
+		window.location.href = "nametag.html";
+		
+	});
+});
+</script>
+</body>
+</html>
