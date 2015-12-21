@@ -4,7 +4,6 @@
 	<link href='http://fonts.googleapis.com/css?family=Crimson+Text:400' rel='stylesheet' type='text/css'>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script>        window.jQuery || document.write("<script src='includes/js/jquery.min.1.7.2.js'>\x3C/script>")</script>		
-	<script src="includes/js/jquery.cookie.js"></script>
 </head>
 <link rel="stylesheet" href="includes/css/style.css"  type="text/css" />
 <body>	

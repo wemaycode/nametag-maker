@@ -5,9 +5,8 @@
 	<link href='http://fonts.googleapis.com/css?family=Crimson+Text:400' rel='stylesheet' type='text/css'>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script>        window.jQuery || document.write("<script src='js/jquery.min.1.7.2.js'>\x3C/script>")</script>		
-	<script src="jquery.cookie.js"></script>
 </head>
-<link rel="stylesheet" href="style.css"  type="text/css" />
+<link rel="stylesheet" href="includes/css/style.css"  type="text/css" />
 <body>
 	<h1>Highrock Nametag Maker</h1>
 <div id="content">
