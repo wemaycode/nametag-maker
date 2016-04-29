@@ -37,6 +37,22 @@
 	<br/>
 	<div class="label">Last Name </div>
 	<input type="text" name="Last4" id="Last4" size="52" value="">
+	
+	<h3>Nametag #5</h3>
+	<div class="label">First Name</div>
+	<input type="text" name="First5" id="First5" size="52" value="">
+	<br/>
+	<div class="label">Last Name </div>
+	<input type="text" name="Last5" id="Last5" size="52" value="">
+	
+	<h3>Nametag #6</h3>
+	<div class="label">First Name</div>
+	<input type="text" name="First6" id="First6" size="52" value="">
+	<br/>
+	<div class="label">Last Name </div>
+	<input type="text" name="Last6" id="Last6" size="52" value="">
+	
+	
 	<br/><br/>
 	<input type="button" title="" value="Submit" name="submit" id="submit">
 	
@@ -55,6 +71,10 @@ $(document).ready(function(){
 		$.cookie('last3', Last3.value, { path: '/'} );
 		$.cookie('first4', First4.value, { path: '/'} );
 		$.cookie('last4', Last4.value, { path: '/'} );
+		$.cookie('first5', First5.value, { path: '/'} );
+		$.cookie('last5', Last5.value, { path: '/'} );
+		$.cookie('first6', First6.value, { path: '/'} );
+		$.cookie('last6', Last6.value, { path: '/'} );
 		
 		window.location.href = "nametag.html";
 		

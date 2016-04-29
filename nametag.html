@@ -7,14 +7,14 @@
 	<script src="includes/js/jquery.cookie.js"></script>	
 </head>
 <link rel="stylesheet" href="includes/css/style.css"  type="text/css" />
+
 <body>
+
 <div id="content">
+
+	<!-- Front Side -->
 	<div class="image">
 		<div class="nametag one reg">
-			<div class="first">First1</div>
-			<div class="last">Last1</div>
-		</div>
-		<div class="nametag one flip">
 			<div class="first">First1</div>
 			<div class="last">Last1</div>
 		</div>
@@ -22,15 +22,7 @@
 			<div class="first">First2</div>
 			<div class="last">Last2</div>
 		</div>
-		<div class="nametag two flip">
-			<div class="first">First2</div>
-			<div class="last">Last2</div>
-		</div>
 		<div class="nametag three reg">
-			<div class="first">First3</div>
-			<div class="last">Last3</div>
-		</div>
-		<div class="nametag three flip">
 			<div class="first">First3</div>
 			<div class="last">Last3</div>
 		</div>
@@ -38,11 +30,44 @@
 			<div class="first">First4</div>
 			<div class="last">Last4</div>
 		</div>
-		<div class="nametag four flip">
+		<div class="nametag five reg">
+			<div class="first">First5</div>
+			<div class="last">Last5</div>
+		</div>
+		<div class="nametag six reg">
+			<div class="first">First6</div>
+			<div class="last">Last6</div>
+		</div>
+	</div>
+	
+	<!-- Back Side -->
+	<div class="image">
+		<div class="nametag two reg">
+			<div class="first">First2</div>
+			<div class="last">Last2</div>
+		</div>
+		<div class="nametag one reg">
+			<div class="first">First1</div>
+			<div class="last">Last1</div>
+		</div>
+		<div class="nametag four reg">
 			<div class="first">First4</div>
 			<div class="last">Last4</div>
 		</div>
+		<div class="nametag three reg">
+			<div class="first">First3</div>
+			<div class="last">Last3</div>
+		</div>
+		<div class="nametag six reg">
+			<div class="first">First6</div>
+			<div class="last">Last6</div>
+		</div>
+		<div class="nametag five reg">
+			<div class="first">First5</div>
+			<div class="last">Last5</div>
+		</div>
 	</div>
+	
 </div>
 
 <script>
@@ -54,16 +79,11 @@ $(document).ready(function(){
 	$(".nametag.three.reg .first").html($.cookie('first3'));
 	$(".nametag.three.reg .last").html($.cookie('last3'));	
 	$(".nametag.four.reg .first").html($.cookie('first4'));
-	$(".nametag.four.reg .last").html($.cookie('last4'));	
-	
-	$(".nametag.one.flip .first").html($.cookie('first1'));
-	$(".nametag.one.flip .last").html($.cookie('last1'));
-	$(".nametag.two.flip .first").html($.cookie('first2'));
-	$(".nametag.two.flip .last").html($.cookie('last2'));	
-	$(".nametag.three.flip .first").html($.cookie('first3'));
-	$(".nametag.three.flip .last").html($.cookie('last3'));	
-	$(".nametag.four.flip .first").html($.cookie('first4'));
-	$(".nametag.four.flip .last").html($.cookie('last4'));	
+	$(".nametag.four.reg .last").html($.cookie('last4'));
+	$(".nametag.five.reg .first").html($.cookie('first5'));
+	$(".nametag.five.reg .last").html($.cookie('last5'));	
+	$(".nametag.six.reg .first").html($.cookie('first6'));
+	$(".nametag.six.reg .last").html($.cookie('last6'));		
 	
 	$.removeCookie('first1');
 	$.removeCookie('last1');
@@ -73,6 +93,10 @@ $(document).ready(function(){
 	$.removeCookie('last3');
 	$.removeCookie('first4');
 	$.removeCookie('last4');
+	$.removeCookie('first5');
+	$.removeCookie('last5');
+	$.removeCookie('first6');
+	$.removeCookie('last6');
 	
 });
 </script>
