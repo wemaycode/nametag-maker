@@ -13,7 +13,7 @@
 <div id="content">
 
 	<!-- Front Side -->
-	<div class="image">
+	<div class="image front">
 		<div class="nametag one reg">
 			<div class="first">First1</div>
 			<div class="last">Last1</div>
@@ -41,7 +41,7 @@
 	</div>
 	
 	<!-- Back Side -->
-	<div class="image">
+	<div class="image back">
 		<div class="nametag two reg">
 			<div class="first">First2</div>
 			<div class="last">Last2</div>
@@ -72,18 +72,33 @@
 
 <script>
 $(document).ready(function(){
-	$(".nametag.one.reg .first").html($.cookie('first1'));
-	$(".nametag.one.reg .last").html($.cookie('last1'));
-	$(".nametag.two.reg .first").html($.cookie('first2'));
-	$(".nametag.two.reg .last").html($.cookie('last2'));	
-	$(".nametag.three.reg .first").html($.cookie('first3'));
-	$(".nametag.three.reg .last").html($.cookie('last3'));	
-	$(".nametag.four.reg .first").html($.cookie('first4'));
-	$(".nametag.four.reg .last").html($.cookie('last4'));
-	$(".nametag.five.reg .first").html($.cookie('first5'));
-	$(".nametag.five.reg .last").html($.cookie('last5'));	
-	$(".nametag.six.reg .first").html($.cookie('first6'));
-	$(".nametag.six.reg .last").html($.cookie('last6'));		
+	// Front Side
+	$(".front .nametag.one.reg .first").html($.cookie('first1'));
+	$(".front .nametag.one.reg .last").html($.cookie('last1'));
+	$(".front .nametag.two.reg .first").html($.cookie('first2'));
+	$(".front .nametag.two.reg .last").html($.cookie('last2'));	
+	$(".front .nametag.three.reg .first").html($.cookie('first3'));
+	$(".front .nametag.three.reg .last").html($.cookie('last3'));	
+	$(".front .nametag.four.reg .first").html($.cookie('first4'));
+	$(".front .nametag.four.reg .last").html($.cookie('last4'));
+	$(".front .nametag.five.reg .first").html($.cookie('first5'));
+	$(".front .nametag.five.reg .last").html($.cookie('last5'));	
+	$(".front .nametag.six.reg .first").html($.cookie('first6'));
+	$(".front .nametag.six.reg .last").html($.cookie('last6'));		
+	
+	// Back Side
+	$(".back .nametag.two.reg .first").html($.cookie('first1'));
+	$(".back .nametag.two.reg .last").html($.cookie('last1'));
+	$(".back .nametag.one.reg .first").html($.cookie('first2'));
+	$(".back .nametag.one.reg .last").html($.cookie('last2'));	
+	$(".back .nametag.four.reg .first").html($.cookie('first3'));
+	$(".back .nametag.four.reg .last").html($.cookie('last3'));	
+	$(".back .nametag.three.reg .first").html($.cookie('first4'));
+	$(".back .nametag.three.reg .last").html($.cookie('last4'));
+	$(".back .nametag.six.reg .first").html($.cookie('first5'));
+	$(".back .nametag.six.reg .last").html($.cookie('last5'));	
+	$(".back .nametag.five.reg .first").html($.cookie('first6'));
+	$(".back .nametag.five.reg .last").html($.cookie('last6'));
 	
 	$.removeCookie('first1');
 	$.removeCookie('last1');
